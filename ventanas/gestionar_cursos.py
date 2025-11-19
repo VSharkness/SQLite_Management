@@ -93,7 +93,7 @@ def gestionar_cursos(main):
     b_borrar.grid(row=0, column=1, padx=5, sticky="ew")
 
     # FUNCIÓN BOTÓN LIMPIAR
-    b_limpiar = crear_boton(frame_botones, "Limpiar formulario", lambda: [nombre_entry.delete(0, tk.END), descripcion_entry.delete(0, tk.END)])
+    b_limpiar = crear_boton(frame_botones, "Limpiar formulario", lambda: [nombre_entry.delete(0, tk.END), descripcion_entry.delete("1.0", "end"),contador_label.config(text=f"0/{MAX_CHARS}")])
     b_limpiar.grid(row=0, column=2, padx=5, sticky="ew")
 
     # AJUSTE DE COLUMNAS

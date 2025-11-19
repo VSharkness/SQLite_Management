@@ -78,7 +78,7 @@ def gestionar_tareas(main):
     b_borrar = crear_boton(frame_botones, "Borrar seleccionado", borrar_seleccionado)
     b_borrar.grid(row=0, column=1, padx=5, ipadx=5, ipady=3, sticky="ew")
 
-    b_limpiar = crear_boton(frame_botones, "Limpiar formulario", lambda: [titulo_entry.delete(0, tk.END), fecha_entry.delete(0, tk.END)])
+    b_limpiar = crear_boton(frame_botones, "Limpiar formulario", lambda: [combo_curso.set(""), titulo_entry.delete(0, tk.END), fecha_entry.delete(0, tk.END)])
     b_limpiar.grid(row=0, column=2, padx=5, ipadx=5, ipady=3, sticky="ew")
 
     for i in range(3):
