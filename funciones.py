@@ -1,7 +1,11 @@
 import sqlite3
+import os
 
-# RUTA A BASE DE DATOS
-DB_RUTA = r"M:\DB Browser SQLite projects\Proyecto\proyecto.db"
+# OBTENER CARPETA RAÍZ DLE PROYECTO
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# RUTA DE BASE DE DATOS EN /database
+DB_RUTA = os.path.join(BASE_DIR, "database", "proyecto.db")
 
 ############################## CONEXIÓN BASE DE DATOS ##############################
 def obtener_conexion():
