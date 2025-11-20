@@ -3,18 +3,21 @@
 Proyecto de una aplicación de escritorio que permite gestionar una base de datos SQLite mediante una interfaz gráfica. Facilita la administración de **alumnos, cursos, tareas, entregas y asignaciones** sin necesidad de escribir consultas SQL.
 
 ---
+## Importante
 Antes de ejecutar el proyecto, necesitas:
-
 - **Python 3.x**
 
 ---
 ## Cómo usar
 
-1. El proyecto incluye una base de datos de ejemplo llamada `proyecto.db` dentro de la carpeta `/database`.  
-   No es necesario configurar nada adicional.
-2. Ejecuta el proyecto desde la consola con `main.py`:
+1. El proyecto incluye una base de datos de ejemplo llamada `proyecto.db` dentro de la carpeta `/database`. Esta viene con algunos ejemplos de alumnos, cursos, entregas y asignaciones. No es necesario configurar nada adicional en cuanto a la base de datos.
+2. Descomprime el proyecto en una carpeta a tu elección.
+3. Accede a la carpeta 'SQLite_Management-master'.
+4. Ejecuta el proyecto desde la consola con `main.py`:
    ```bash
    python main.py
+![Tutorial](https://i.imgur.com/lwFyXkl.png)
+
 
 ---
 ## Construido con
